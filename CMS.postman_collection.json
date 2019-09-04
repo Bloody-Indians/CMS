@@ -1,0 +1,561 @@
+{
+	"id": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+	"name": "CMS",
+	"description": "",
+	"order": [
+		"8554b0eb-e371-ab83-c85a-38bf73b93f9e",
+		"10251b7a-fab9-e076-5355-ab6b1bc82e10",
+		"0d0b498f-6572-6391-46c0-37c576f63e58",
+		"3c72f6c1-6753-bb4f-55b9-c5c2278b6cc4",
+		"8458b707-b606-fb66-f5e8-2e4701d063b2",
+		"b586f923-89a5-e417-69c2-5142199b1e75",
+		"b092a5a6-d48d-9383-2181-da9fc231e7fa",
+		"32554ebf-f811-8826-409d-6cab10492a2e",
+		"5eb62913-3e81-8eef-411e-8b4d9c7506c8",
+		"e52bcea5-3a97-3fc4-041c-a146bd511a62",
+		"14da8890-a988-287f-b2f7-6ffb801e5c35",
+		"4703664a-b17b-dc51-7972-7c133946490e",
+		"fa6b4452-fbe4-7ee8-a05a-bc6f86aa1a7d",
+		"52c942dc-84a6-df3e-52f7-bf801e9cf456",
+		"699eba30-933d-d1eb-51c5-da4abe7d077a",
+		"f176057c-968c-1cc7-77f6-bd7f81c63b65"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1564467781213,
+	"owner": "1074128",
+	"public": false,
+	"requests": [
+		{
+			"id": "0d0b498f-6572-6391-46c0-37c576f63e58",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTU2NTQ1NzEzNiwiaWF0IjoxNTY0ODUyMzM2fQ.WZPlOcy1lzikHSlt7hc7oOvUO2QHmdBQbJaw2lo0FXtCAUcAQz8EQ14jnDTBcWyXKoRS5iRWJ0SZDr7SZYgyrg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTU2NTQ1NzEzNiwiaWF0IjoxNTY0ODUyMzM2fQ.WZPlOcy1lzikHSlt7hc7oOvUO2QHmdBQbJaw2lo0FXtCAUcAQz8EQ14jnDTBcWyXKoRS5iRWJ0SZDr7SZYgyrg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/assign/complaint/user3@gmail.com/INC005",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1564899793314,
+			"name": "create new complaint",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": " {\n        \n        \"firstName\": \"siva\",\n        \"lastName\": \"kumar\",\n        \"userEmail\": \"user3@gmail.com\",\n        \"password\": \"test\",\n        \"status\": \"ACTIVE\",\n        \"username\": \"user1\",\n        \"enabled\": true,\n        \"lastPasswordResetDate\": \"2019-08-03T16:43:46.000+0000\",\n        \"userAuthorities\": [\n            {\n                \"id\": 6,\n                \"name\": \"ROLE_ADMIN\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "10251b7a-fab9-e076-5355-ab6b1bc82e10",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/getAllComplaints",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567514163518,
+			"name": "get All Complaints by Admin",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": []
+		},
+		{
+			"id": "14da8890-a988-287f-b2f7-6ffb801e5c35",
+			"headers": "//Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTU2NTQ1NzEzNiwiaWF0IjoxNTY0ODUyMzM2fQ.WZPlOcy1lzikHSlt7hc7oOvUO2QHmdBQbJaw2lo0FXtCAUcAQz8EQ14jnDTBcWyXKoRS5iRWJ0SZDr7SZYgyrg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTU2NTQ1NzEzNiwiaWF0IjoxNTY0ODUyMzM2fQ.WZPlOcy1lzikHSlt7hc7oOvUO2QHmdBQbJaw2lo0FXtCAUcAQz8EQ14jnDTBcWyXKoRS5iRWJ0SZDr7SZYgyrg",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8761/eureka/apps",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567574503030,
+			"name": "/eureka/apps",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": []
+		},
+		{
+			"id": "32554ebf-f811-8826-409d-6cab10492a2e",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4OTEyLCJpYXQiOjE1Njc1NzQxMTJ9.P-bj7lcQxbJHHPF7zswr13JWfThr_aVJ6Jt_XRuzu0pGvBAWFjd49bIL2ZjkcwPQQCgHELDfnwc6mHoJvSleyw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4OTEyLCJpYXQiOjE1Njc1NzQxMTJ9.P-bj7lcQxbJHHPF7zswr13JWfThr_aVJ6Jt_XRuzu0pGvBAWFjd49bIL2ZjkcwPQQCgHELDfnwc6mHoJvSleyw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/actuator/health",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567574464255,
+			"name": "/actuator/health",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": []
+		},
+		{
+			"id": "3c72f6c1-6753-bb4f-55b9-c5c2278b6cc4",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4OTEyLCJpYXQiOjE1Njc1NzQxMTJ9.P-bj7lcQxbJHHPF7zswr13JWfThr_aVJ6Jt_XRuzu0pGvBAWFjd49bIL2ZjkcwPQQCgHELDfnwc6mHoJvSleyw\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4OTEyLCJpYXQiOjE1Njc1NzQxMTJ9.P-bj7lcQxbJHHPF7zswr13JWfThr_aVJ6Jt_XRuzu0pGvBAWFjd49bIL2ZjkcwPQQCgHELDfnwc6mHoJvSleyw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/complaint/update",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567574143894,
+			"name": "Update Complaint by Admin or Support",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": "{  \r\n   \r\n   \"incidentNumber\":\"INC321\",\r\n   \"customerName\":\"hari babu\",\r\n   \"createdDate\":\"28-07-2019\",\r\n   \"assigneeName\":\"Karthik\",\r\n   \"incidentStatus\":\"completed\",\r\n   \"customerType\":\"business\",\r\n   \"customerAccNumber\":\"1070949930\",\r\n   \"customerAccType\":\"Saving\",\r\n   \"email\":\"hari@gmail.com\",\r\n   \"phoneNumber\":\"9445978261\",\r\n   \"complaintType\":\"credit\",\r\n   \"assignedDate\":\"babu\",\r\n   \"firstName\":\"hari\",\r\n   \"lastName\":\"babu\",\r\n   \"complaintDescription\":\"my credit card is not working\"\r\n}\r\n\r\n  "
+		},
+		{
+			"id": "4703664a-b17b-dc51-7972-7c133946490e",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYXJpIiwiZXhwIjoxNTY4MTE3OTI3LCJpYXQiOjE1Njc1MTMxMjd9.GMyIXdCab_YiNRE5NkKeAVNp4DJbt9vf6M6-JZpwPevlnt8fBxJdYfAroguUz9N9kLtUQrR0klfUVsr4QU_-4Q\nusername: hari@gmail.com\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYXJpIiwiZXhwIjoxNTY4MTE3OTI3LCJpYXQiOjE1Njc1MTMxMjd9.GMyIXdCab_YiNRE5NkKeAVNp4DJbt9vf6M6-JZpwPevlnt8fBxJdYfAroguUz9N9kLtUQrR0klfUVsr4QU_-4Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "hari@gmail.com",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/complaint/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567514170544,
+			"name": "new Complaint Registration by User",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": "{  \r\n   \r\n  \r\n   \"customerName\":\"hari1 babu\",\r\n   \"createdDate\":\"28-07-2019\",\r\n   \"assigneeName\":\"Rama\",\r\n   \"incidentStatus\":\"inprogress\",\r\n   \"customerType\":\"business\",\r\n   \"customerAccNumber\":\"1070949930\",\r\n   \"customerAccType\":\"Saving\",\r\n   \"customerEmail\":\"hari1@gmail.com\",\r\n   \"phoneNumber\":\"9445978261\",\r\n   \"complaintType\":\"credit\",\r\n   \"assignedDate\":\"30-07-2019\",\r\n   \"customerFirstName\":\"hari1\",\r\n   \"customerLastName\":\"babu\",\r\n   \"complaintDescription\":\"my credit card is not working1\"\r\n}\r\n\r\n  "
+		},
+		{
+			"id": "52c942dc-84a6-df3e-52f7-bf801e9cf456",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567511373707,
+			"name": "SupportLogin",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": "{\"username\":\"vaib@gmail.com\",\r\n\"password\":\"password\"\r\n}"
+		},
+		{
+			"id": "5eb62913-3e81-8eef-411e-8b4d9c7506c8",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODE3NzE4MSwiaWF0IjoxNTY3NTcyMzgxfQ.j9IlrpREZJjwW0egmJRx8FIJkWKg1nK4JahtkgrpGKb9YTjBtBxmkl9ReqUm7gsbQGZedEp6Q5io6wWHun5l8w\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODE3NzE4MSwiaWF0IjoxNTY3NTcyMzgxfQ.j9IlrpREZJjwW0egmJRx8FIJkWKg1nK4JahtkgrpGKb9YTjBtBxmkl9ReqUm7gsbQGZedEp6Q5io6wWHun5l8w",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/refresh",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567572396664,
+			"name": "refresh token api",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": []
+		},
+		{
+			"id": "699eba30-933d-d1eb-51c5-da4abe7d077a",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4MjYxLCJpYXQiOjE1Njc1NzM0NjF9.xzKzfJIZsRANWj_Th8TjGA88_yQDM7eK_gnGJ89BidzoYUVigxEROqqc8HoEQpFJKCKimxlZ1M6OKAFYLv3TyQ\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliIiwiZXhwIjoxNTY4MTc4MjYxLCJpYXQiOjE1Njc1NzM0NjF9.xzKzfJIZsRANWj_Th8TjGA88_yQDM7eK_gnGJ89BidzoYUVigxEROqqc8HoEQpFJKCKimxlZ1M6OKAFYLv3TyQ",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/assigned/complaints",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567573482718,
+			"name": "Assigned Complaints",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": " {\"userEmail\": \"vaib@gmail.com\"}"
+		},
+		{
+			"id": "8458b707-b606-fb66-f5e8-2e4701d063b2",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg\nusername: vaib@gmail.com\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "vaib@gmail.com",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/assign/complaint/INC393",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567514713660,
+			"name": "assign new complaint to Support User",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": " {\n  \n        \"supportUserName\": \"murali1@gmail.com\",\n        \"supportUserPassword\": \"password\",\n        \"status\": \"ACTIVE\"\n     \n    }"
+		},
+		{
+			"id": "8554b0eb-e371-ab83-c85a-38bf73b93f9e",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/complaint/INC321",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567572310175,
+			"name": "Get Single Complaint",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": []
+		},
+		{
+			"id": "b092a5a6-d48d-9383-2181-da9fc231e7fa",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExODA3OCwiaWF0IjoxNTY3NTEzMjc4fQ.JcAL8Ofb6BTyYeCigcFZRUi30Enpx7UKIuSysMy56PeRMjG8VWHjs0ir2jNnNuFUHfUwLUBIxbE64v33bdotHg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/getAllUsers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567514168870,
+			"name": "Get All user details by Admin",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "b586f923-89a5-e417-69c2-5142199b1e75",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExNzg1NywiaWF0IjoxNTY3NTEzMDU3fQ.dxRnM48VrFrSEVYacSEIKriVL7-4yHaaCprPul1dmvhtvsWksDW6-qAYHWtWBnw-Hj9stWgfvkwYVrMRB5uNdQ\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2ODExNzg1NywiaWF0IjoxNTY3NTEzMDU3fQ.dxRnM48VrFrSEVYacSEIKriVL7-4yHaaCprPul1dmvhtvsWksDW6-qAYHWtWBnw-Hj9stWgfvkwYVrMRB5uNdQ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567514173231,
+			"name": "Admin CRUD",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": " {\n        \"firstName\": \"hari\",\n        \"lastName\": \"kumar\",\n        \"userEmail\": \"hari@gmail.com\",\n        \"password\": \"password\",\n        \"status\": \"ACTIVE\",\n        \"username\": \"hari\",\n        \"enabled\": true,\n        \"lastPasswordResetDate\": \"0\",\n        \"userAuthorities\": [\n            {\n               \n                \"name\": \"ROLE_USER\"\n            }\n        ]\n    }"
+		},
+		{
+			"id": "e52bcea5-3a97-3fc4-041c-a146bd511a62",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567503533112,
+			"name": "Admin Login",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": "{\"username\":\"admin\",\r\n\"password\":\"password\"\r\n}"
+		},
+		{
+			"id": "f176057c-968c-1cc7-77f6-bd7f81c63b65",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYXJpIiwiZXhwIjoxNTY4MTc4NDcyLCJpYXQiOjE1Njc1NzM2NzJ9.BuIMwRCNsG0E6akcilVcAjDZ7tfBcJgjqWgnTCIW8ExQw0aH1c1lCiJKiKIPXq82MYSt_1csFtITVNT418VpMQ\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYXJpIiwiZXhwIjoxNTY4MTc4NDcyLCJpYXQiOjE1Njc1NzM2NzJ9.BuIMwRCNsG0E6akcilVcAjDZ7tfBcJgjqWgnTCIW8ExQw0aH1c1lCiJKiKIPXq82MYSt_1csFtITVNT418VpMQ",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/info",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567573692825,
+			"name": "User Info",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": " {\"userEmail\": \"vaib@gmail.com\"}"
+		},
+		{
+			"id": "fa6b4452-fbe4-7ee8-a05a-bc6f86aa1a7d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567503557254,
+			"name": "Customer Login",
+			"description": "",
+			"collectionId": "db02a4d9-cc51-6d60-ff94-3de4e5b1d0fb",
+			"responses": [],
+			"rawModeData": "{\"username\":\"hari@gmail.com\",\r\n\"password\":\"password\"\r\n}"
+		}
+	]
+}
